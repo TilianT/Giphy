@@ -27,7 +27,7 @@ class App extends Component {
         <div className="container">
           {
 	          data.map( item => {
-	            return <img src={item.url} alt={item.title} key={item.id}/>
+	            return <img src={item.url} alt={item.title} key={item.id} crossOrigin="anonymous"/>
             })
           }
         </div>
